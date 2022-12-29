@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "reid-annotation-tool"
+version = "0.1.0"
+description = "Reidentification dataset annotation tool"
+authors = ["inna-tuzhikova <inna.tuzhikova@gmail.com>"]
+readme = "README.md"
+packages = [{include = "reid_annotation_tool"}]
+
+[tool.poetry.dependencies]
+python = "~3.8"
+
+[tool.poetry.group.test]
+optional = true
+
+[tool.poetry.group.test.dependencies]
+pytest = "==7.2.0"
+
+[tool.poetry.group.deploy]
+optional = true
+
+[tool.poetry.group.deploy.dependencies]
+pyinstaller = "==4.5.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+reid_annotation_tool = "reid_annotation_tool.main:main"
