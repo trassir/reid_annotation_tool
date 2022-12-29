@@ -27,3 +27,4 @@ build-backend = "poetry.core.masonry.api"
 
 [tool.poetry.scripts]
 reid_annotation_tool = "reid_annotation_tool.main:main"
+deploy = "deploy.deploy:deploy"
