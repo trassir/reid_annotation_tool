@@ -28,11 +28,9 @@ DEBUG = True
 ALLOWED_HOSTS = []
 
 
-# Путь к директории с медиафайлами
 MEDIA_URL = '/media/'
 MEDIA_ROOT = 'path/to//out/reid_dataset/classes'
 
-# Путь к директории со статическими файлами
 STATIC_URL = '/static/'
 STATICFILES_DIRS = ["path/to/reid_annotation_tool/reid/static"]
 
