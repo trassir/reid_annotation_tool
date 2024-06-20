@@ -1,0 +1,18 @@
+FROM huecker.io/library/postgres:16
+
+
+RUN apt-get update && apt-get install -y \
+    postgresql-server-dev-16 \
+    build-essential \
+    wget \
+    git
+
+
+COPY init.sql /docker-entrypoint-initdb.d/init.sql
+
+
+ENV POSTGRES_USER=postgres
+ENV POSTGRES_PASSWORD=1234567
+ENV POSTGRES_DB=postgres
+
+EXPOSE 5432
