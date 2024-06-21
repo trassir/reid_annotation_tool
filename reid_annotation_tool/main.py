@@ -1,9 +1,0 @@
-from reid_annotation_tool.package_0 import app
-
-
-def main():
-    app.run()
-
-
-if __name__ == '__main__':
-    main()

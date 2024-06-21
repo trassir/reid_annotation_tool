@@ -1,1 +1,0 @@
-prompt = 'Enter your name: '
